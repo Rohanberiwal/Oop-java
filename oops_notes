@@ -1,1 +1,79 @@
+Object oriented progamming oops in java 
+Reason to study oop 
+1) user defined datatype -> int , float , double . string etc
+Class : 
+storage container that has objects with same attributes/ have some common properties .
+eX ;
+class XII 
+student class -> rollnum , 12 percentage etx are common attributes . All these prioperties are stored in the student class .
+
+CLASSES - CREATION 
+new datatype creation 
+// creating a student data type 
+pakage oopsinjava
+  import java.util.*;
+
+class Main 
+  {
+    // making off the data type for the class
+    public static Student
+    {
+      int age ;
+      String name  ;
+      double percent ;
+      
+    }
+    public static void main(String[] agrs)
+    {
+        Scanner sc = new Scanner(System.in) ;
+      Student x= new Student() ; //initialsition for the object
+      x.name = sc.nextChar() ;
+      x.age = sc.nextInt() ;
+      x.percent = sc.nextDouble() ;
+      System.out.print(" "+x.name);
+      
+      
+    }
+  }
+object crea5tion syntax 
+Classname objectname = new Classname() ; // syntax 
+example 
+student s1= new student() ;
+object are instances of the class . very impiortant statement 
+When to use array nd when to use classes ?
+array are used when we want simialr data type usage .
+classes are use top work with different data types 
+object with multiple attributes use . 
+
+
+Class in different files 
+car class examples 
+// creating a car class 
+import java.util.*;
+class Main 
+  {
+    public static class Car{
+      String name ;
+      int model ;
+      String brand ;
+    }
+    public static void detail(Car x)
+    {
+      System.out.println("  name "+x.name);
+      System.out.println(" model "+x.model) ;
+      System.out.println(" brand "+x.brand) ;
+    }
+    public static void main(String[] agrs)
+    {
+      Scanner sc = new Scanner(System.in) ;
+      Car x = new Car() ;
+      x.name = sc.nextLine() ;
+      x.model = sc.nextInt() ;
+      x.brand = sc.nextLine() ;
+      detail(x) ;
+    }
+  }
+
+// new classes can be created in the main classes as well but we cannot update the values in those functions 
+fucntion whose values has to updated and returned has to be made outside the main 
 
