@@ -21,7 +21,7 @@ class Main
       int age ;
       String name  ;
       double percent ;
-      
+
     }
     public static void main(String[] agrs)
     {
@@ -31,8 +31,8 @@ class Main
       x.age = sc.nextInt() ;
       x.percent = sc.nextDouble() ;
       System.out.print(" "+x.name);
-      
-      
+
+
     }
   }
 object crea5tion syntax 
@@ -76,4 +76,85 @@ class Main
 
 // new classes can be created in the main classes as well but we cannot update the values in those functions 
 fucntion whose values has to updated and returned has to be made outside the main 
+scope of a class / data type is within the main is in main only and not outside the main .
+
+Passing a class to a function 
+1) declare the function outside  the main .
+2) object is passed in the function the attirbutes of the object can be changed easily . 
+3)user defined data types are always passed by refrance in the other function . 
+CLASS IN DIFFERENT FILES 
+files of different classes should be in the same package .
+for using the file in the same projet we dont have to use any special command .
+when we have to use one object/ class in the other project 
+import filename.classname ; syntax need to be used .
+thr other name of project is package
+
+Ascess modifiers 
+default values 
+example for a bank management system
+import java.util.*;
+class Main 
+  {
+    static void printing(Bank bk)
+    {
+      System.out.println(" name "+bk.name) ;
+      System.out.println(" age "+bk.age) ;
+      System.out.println(" banknumber "+bk.banknumber) ;
+      
+    }
+    public static class Bank
+      {
+        String name ;
+        int age ;
+        int money ;
+        int banknumber ;
+      }
+    public static void main(String agrs[])
+    {
+      Scanner sc = new Scanner(System.in) ;
+      Bank bk = new Bank() ;
+      printing(bk) ;
+    }
+  }
+
+output **
+null  , 0 , 0 . // this are called the default modifiers  that are set before 
+Ascess modifiers 
+use to grant permission and give the ascess to the user .
+
+Public  -> all packages 
+private -> same class 
+default -> same pacakge
+
+Use of the package means this cannot be used in the different files or they can be used in only one class not other package 
+example ; // single file package 
+
+
+import java.util.*;
+class Main 
+  {
+    static void printing(Bank bk)
+    {
+      System.out.println(" name "+bk.name) ;
+      System.out.println(" age "+bk.age) ;
+      System.out.println(" banknumber "+bk.banknumber) ;
+      
+    }
+    public static class Bank
+      {
+        String name ;
+        private int age ;
+        private int money ;
+       private  int banknumber ;
+      }
+    public static void main(String agrs[])
+    {
+      Scanner sc = new Scanner(System.in) ;
+      Bank bk = new Bank() ;
+      printing(bk) ;
+    }
+  }
+private same file me only used 
+default same pacakge me only used 
+public can be used in different package 
 
