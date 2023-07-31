@@ -158,4 +158,259 @@ private same file me only used
 default same pacakge me only used 
 public can be used in different package 
 setter is always used before the getter  function otherwise it will returnb null values .
+example of this is 
+import java.util.*;
+class Main
+{
+  public static void detail(Car c)
+  {
+    System.out.println(" "+c.name);
+    System.out.println(c.age);
+    System.out.println(c.price);
+  }
+  public static class Car
+  {
+    String name ;
+    int age ;
+    int price ;
 
+    public String getName()
+    {
+      return name ;
+    }
+    public int  getAge()
+    {
+      return age ;
+    }
+    public int  getPrice()
+    {
+      return price ;
+    }
+    public void setName(String name)
+    {
+      this.name = name ;
+    }
+    public void setAge(int age)
+    {
+      this.age = age ;
+    }
+    public void setPrice(int price)
+    {
+      this.price = price;
+    }
+
+  }
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in) ;
+    Car c = new Car() ;
+    c.setName("maruti") ;
+    c.setAge(12) ;
+    c.setPrice(20000) ;
+    if(c.getName() =="maruti")
+    {
+      detail(c);
+  }
+}
+}
+// example for 2 way input one by constructor and other by the hardcoding
+import java.util.*;
+class Main
+{
+  public static class Student
+  {
+    String name  ;
+    int age ;
+    int grade  ;
+    public Student(String name  , int age , int grade)
+    {
+      this.name = name ;
+      this.age = age ;
+      this.grade = grade ;
+      System.out.print("name :"+this.name);
+       System.out.print("age :"+this.age);
+        System.out.print("grade  :"+this.grade);
+    }
+    public String getname()
+    {
+      return name ;
+    }
+    public int getage()
+    {
+      return age ;
+    }
+    public int getgrade()
+    {
+      return grade ;
+
+    }
+    public void setname(String name)
+    {
+      this.name = name ;
+    }
+       public void setage(int age)
+    {
+     this.age = age ;
+    }
+       public void setgrade(int grade)
+    {
+      this.grade  = grade ;
+    }
+  }
+  public static void main(String args[])
+  {
+    //Scanner sc = new Scanner() ;
+    Student s = new Student("rohan",19,2) ;
+   
+  }
+}
+What is the use of final keyword ?
+one the name / age / attribute of a object is final then no getter or setter can change it to the other name / attribute 
+example for the same ;
+import java.util.*;
+class Main
+{
+  public static class Student
+  {
+   final String name ="rohan"  ;
+    int age ;
+    int grade  ;
+   
+    public String getname()
+    {
+      return name ;
+    }
+    public int getage()
+    {
+      return age ;
+    }
+    public int getgrade()
+    {
+      return grade ;
+
+    }
+    public void setname(String name)
+    {
+      this.name = name ;
+    }
+       public void setage(int age)
+    {
+     this.age = age ;
+    }
+       public void setgrade(int grade)
+    {
+      this.grade  = grade ;
+    }
+  }
+  public static void main(String args[])
+  {
+    //Scanner sc = new Scanner() ;
+    Student s = new Student() ;
+    s.setname("rohit");
+   System.out.print(s.getname());  
+  }
+}
+
+What is static keyword ? 
+in a student class if we wish to calcuate the total number of student then after the initialistion of the constructor the number has to be added again and again so the neumber in the constructor show a fix value . 
+example 
+studeent++ // to calcaute the net student in the class 
+the key point for this is that for a counter element we should have the counter as the property of class and not of the object .
+here the sum of the number of student is the property of object and not the class 
+static keyword is used to make the changes witht the previous additon / sum . 
+static int num ++ will be a class object now and not a object attribute .
+A PUBLIC STATIC FUNCTION SHOULD RETURN A PUBLIC STATIC ATTRIBUTE . 
+ANY ATTRIBUTE WHICH IS NOT A PUBLIC AND A STATIC ATTRIBUTE WILL GIVE ERROR FOR THE RETURN FROM A PUBLIC STATIC STATIC FUNC /
+Static is used if we want to asceess the function i9n the class .
+synatax is classname.function .
+Final project java class fraction cacluator 
+import java.util.*;
+class Fractioncalss 
+{
+    public static void Scanner()
+    {
+        
+    }
+    public static void add(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.dem2) ;
+            Double nsum = ((f.dem1)*(s.num2)) + ((s.dem2)*(f.num1)) ;
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+        public static void subtract(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.dem2) ;
+            Double nsum = ((f.dem1)*(s.num2)) - ((s.dem2)*(f.num1)) ;
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+        public static void multiple(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.dem2) ;
+            Double nsum = (f.num1)*(s.num2);
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+        public static void divide(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.num2) ;
+            Double nsum = ((s.dem2)*(f.num1)) ;
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+    public static class Fraction
+    {
+        Double num1 ;
+        Double dem1 ;
+        Double num2 ;
+        Double dem2  ;
+        
+        
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in) ;
+        System.out.println("welcome to fraction class ") ;
+        System.out.println("Choose the operation  ") ;
+        System.out.println("1. ADD") ;
+        System.out.println("2. MULTIPLY ") ;
+        System.out.println("3. DIVIDE  ") ;
+        System.out.println("4. SUBTRACT ") ;
+        int choice = sc.nextInt() ;
+        Fraction f = new Fraction() ;
+        System.out.print("enter numerator ") ;
+        f.num1 = sc.nextDouble() ;
+        System.out.print("enter denomintor  ") ;
+        f.dem1 = sc.nextDouble() ;
+        System.out.print("\n");
+        Fraction s = new Fraction() ;
+        System.out.print("enter numerator ") ;
+        s.num2 = sc.nextDouble() ;
+        System.out.print("enter denomintor  ") ;
+        s.dem2 = sc.nextDouble() ;
+        if(choice==1)
+        {
+            add(f,s) ;
+        }
+        else if(choice ==2)
+        {
+            multiple(f,s);
+        }
+        else if(choice ==3)
+        {
+           divide(f,s) ;
+        }
+        else 
+        {
+          subtract(f,s);
+
+        }
+
+    }
+
+}
