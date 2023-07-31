@@ -157,4 +157,5 @@ class Main
 private same file me only used 
 default same pacakge me only used 
 public can be used in different package 
+setter is always used before the getter  function otherwise it will returnb null values .
 
