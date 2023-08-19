@@ -6,7 +6,7 @@ class Main
         abstract void carrer() ;
         abstract void patner()  ;
     }
-    public static  abstract class   Daughter extends Parent 
+    public static class   Daughter extends Parent 
     {
         String name ;
         @Override
@@ -20,7 +20,7 @@ class Main
             System.out.println("I  live with my husband  ") ;
         }
     }
-    public static  abstract class Son extends Parent{
+    public static  class Son extends Parent{
         String name  ;
         @Override
       public   void carrer()
@@ -37,12 +37,9 @@ class Main
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in) ;
-        Son s = new Son() ;
-        s.carrer()  ;
-        s.patner() ;
-        Daughter d = new Daughter() ;
-        d.carrer() ;
-        d.patner() ;
-
+        Son son = new Son() ;
+        son.carrer()  ;
+        son.patner() ;
+       
     }
 }
