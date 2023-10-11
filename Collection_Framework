@@ -1,0 +1,49 @@
+Collection Framework Java 
+These are the basic pre - developed data structure that makes the coding part very easy  .
+framework is the collection of file that are developed before and make the difficult stuff easy .
+
+collection framework has a set of api and set of multiple interfaces . with the help of multiple interfaces , the collection framework is use to give a single interface .
+
+there are two main framwork in java  :
+1) collection 
+2) map 
+these are also called as the interfaces 
+these interfaces like the collection has some basic method that inside the data strructure that make the task of addtion , subtraction and computation very esay  .
+example of the collection interface is the list interface  
+list<> l  = new list()<> ;
+the method like the put , add , get makes the comptatiom easy 
+Array list impplement the list interface hence all the list attirbute can be used by the arraylist 
+collection and map has subinterface and these have subclasses that implments this interfaces 
+
+The add , isEmpty  , full are the method that thesr interfaces provide .
+We can also do the parent type and the value of the implementing class 
+Example  :
+list<Integer> LIST = new Linkedlist()<> ;
+
+Vector : similar to arraylist with a few basic differences 
+In the array list multiple thread can ascess the same object , or the object type . In the vector is a synchonised form of the array list 
+Single thread can ascess the Vector in the java .
+
+Main difference is that take 4 threads , all the 4 can ascess the array list , whereas in the vector only one. There is a abstraction in  the internal working of the person .
+in the vector , if the thread one is working on the proejct  , then the thread 2 will be waiting  . The basis implememtation works in the same style , addition etc  .
+
+
+Enumeration in java 
+enums are used in java for the cosntant values and not for any other thing . when something is declared as enums , then that thing becomes constant  . 
+The thing that are declared as enums are called as the enum constants .
+Everything in this is a public static and final memeber . 
+
+The enums uses something called as the ordinal this prints the first thing in the enums positon . 
+
+enums has private and defualt implemenatation , and since we dont wish to make many object , there we uses the enums and wehen we call somehting this enums is called accordingly .
+
+ enums are used only for a fixed group of objects and not for multiple objects . 
+Also the enums objects are not the public or the protected , but they are only the private and final means they are encapsualted  .
+
+All the enums extends the java.lang.enums pacakge or java.lang.enums class  . 
+The enums can implement the interfaces also . 
+Just have to override the methods  
+Enums cannot extend anything and enum cannot be a super class as well 
+The toString method in the class is overridern and this prints the method insdie the tostring method .
+Ordinal is basciall;y the index  , or the order .  
+Enums can also has the constructor  .
