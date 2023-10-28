@@ -1,0 +1,52 @@
+I/O streams
+All the pre-defined classes are in the java.io stream package .  
+Java.io ->pacakge and has the classes that are used for the file handling , file i/o or the normal i/o .
+
+Used for the reading and writing the data from the file .
+This package provide API for the storing the data from the file and the reading , writing the data in the file .  
+
+The pre -defined classes in the java .io are used to take the i/o from ther hardware . exAMPLE - > scanner , println() .
+
+The main motiovation of the i/o stream is to store the data permanently . 
+
+System.err -> used top show the possible errors. 
+
+Problem of not including the i/o stream in a java project :
+1> use to store the object permanenbtly in the java program .
+2> a permanent place to store the data is a data stream , or the file handling . also easy reading and the writing of the program things  . 
+3> JDBC and the networking ae used to store the data in the file and teh remote computer rescpectively . 
+
+4>this is used for the persistent operation on the file . 
+
+Introduction to streams :
+
+The stream is a connection between the java program and a file , 
+it is not an physical connectioon or a network connection , 
+there is a logical connection . 
+A stream is a logical connection between the java program and the file , thought which data manipulation takes place .  
+
+The connectionm between the java file and the text file is the output .
+
+One stream  that is used on to do wrting then the reading cannot be done at the same time .  
+
+One steam that is used to make he connection bettwen the java and the file , then surelty other connection has to be made for the other  . 
+One streanm for the input and the other for the connection between the output stream  . 
+
+Types of the stream  (Class name in java ):
+Input  stream : stream sending  the data out is the input one 
+Ouput stream : stream sending the data to the java file is the output data stream  
+
+The stream on the basis of what is getting transferred  :
+1) Number -> Binary i/o stream  / Byte i/o streams
+2) character -> char i/o stream
+
+Byte streams  :
+1> input streams  :this is used to read from the binary file .
+2> output : this is used to write the numerical numebr to the file .
+
+character streams :
+1> fileReader  : use to read , from the input file 
+2> fileWriter : use to write to the file , speciafically the character .
+
+input(in the binary )& reader(in the character) this  is use to take the input
+output or the writer  is used to generate he output.  
