@@ -1,0 +1,48 @@
+I/O streams Classes 
+soruce -> java app -> sink 
+Source : file , keyboard , i/o hardware , sockets , network computer  . 
+Java app : Normal code
+Sink : network computer , sink , file . array , data strcuture etc 
+
+Source  : Input stream  class object 
+Sink  : output stream class object 
+
+Standard Naming convention for the subclass Naming 
+subclass name  : operation name + superclass name
+The two main input stream that exist for the sink file and the socket are :
+1> File Input stream 
+2> Socket Input stream 
+ 
+For the class of the input and the output streams is :
+1> interface 
+2> abstract class 
+3> concreate class
+
+inputstream class is a abstract class
+outputstream class is the absrtact class 
+
+read() and the write() is  abstract method and not any implemented method 
+
+Important points :
+1>input and the output streams ahs several subclasses 
+2>becasue of many source to read the data and many sources to write the data
+3> read and the write are the abstract method in the abstract classes input stream and the output stream  .
+
+java.lang.Object -> Input stream  ->so on ....
+
+
+Input stream : closable interface
+1> fileInput stream 
+2> Byte array data stream 
+3> FilteInput data stream :subclass 
+ ->1>Data input stream class 
+ ->2> Buffered input stream class
+ ->3> Line number input stream 
+ ->4> Push back data stream
+4>Object input stream 
+5>Piped Input stream
+6> Sequence Input stream 
+7> String buffer input stream
+
+Input stream implements the closable interface 
+The autoclosable is very useful for the auto closing the input stream and this is a interface .
