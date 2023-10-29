@@ -1,0 +1,59 @@
+Output stream Subclasses 
+Input stream are usef for the reading the data from the file , take the input from the file 
+output stream is used to write or give the output to the file  . 
+
+Subclass:
+1> FileOutput Stream 
+2>BytearrayOuput Stream
+3>FilterOutput Stream
+4> Object output stream
+5> Print output stream class 
+6>Object output stream  
+7> Piped output strema 
+
+The output stream has the parent class or the superclass name as the outputStream and this superclass inmplemnts the closable interface and in the jdk 17 or greatre it extends the autoclosabel interface .
+Just like the input stream subclass has the datainput and  the object input interface , the outstrema class also has the objectout and the data out put interface  . 
+
+
+for the writing the primitivte data we alwysa use the data ouptu stream and for the printing we use the printout. 
+for the fast data writing , we use the buffered output stream .
+
+print subclass is the print output only becuase print input does  not make the sense in any domain  .
+
+output stream class is a subclass of the flushable interface , the flushable interface exrtends or edtends the output subclass
+output strema implements the flushable and the closable .
+
+The closable and the autoclosable is avaible in the java.lang.object package . 
+
+
+
+The object and the autoclosable are avaible in the java.lang package , rest the input stream , outputstream and the closbale is in the java.io package .
+
+flushable  interfasce is only for the outputstream  Subclass only . 
+
+************************
+InputStream Subclasses :
+In this there are total of the 9 method avaibel and there is additional 3 methods in the latest java version  .
+
+
+inputstream Subclass :
+public int throws IOExpcetion
+public int read throws Io exception //this si the abstract method and has to inoplemented by the abstract class inputstream. 
+the closable is the marker interfasce and does not have any method defined in this it is basically a maker for the jdk . 
+
+
+*************************
+Ouput stream Subclass 
+There are in total 5 method in this outputstream class 
+Before the compeltion in the writing it is not psoible to find the total number of the bytes .
+The main mthod int eh output is the write() method .
+There is not making alowed in the output stream  . 
+The skip operartion in the output stream class is not avaible. 
+The data  that is getting in the output stream , flushing method has to be called to store  the method in the file or in the output data structure  .
+
+The output stream does not has any update form the new java sion . 
+
+The write() is a abstract method in this abstract subclass output stream
+
+
+becuase of the flushable and the closable interface the ouputstrema ahs the flush() and the close() method defined and these are the concreate methods . 
