@@ -1,0 +1,69 @@
+Coding for the i/op streams
+Writing the data into a file(import java.i/o)
+> import java.i.o
+> create the output stream subclass object . This is based on the destination where u wish to save the data
+ now if in the 2nd part if we are using a file we can use the file Ouput class object . 
+> invoke the write then
+> invoke the flush method> to flush the data into the file 
+> close() method msut be invoked 
+> handle the expections like the io and the file not found expections 
+
+Reading data from the file coding
+1> stream connection is the first and the formost conneection needeed Since we are workign with the file we use the fileInput stream  . 
+
+Steps :
+1> Improt java.io package 
+2> create a input stream  
+3> Used the read()
+4> invokke the close() for the read or the i/o stream cose 
+5> handle the i/o connection 
+
+**The main differnce in the two data stream setting is that in the output the flush is used and the input it si not used  .
+
+
+Working wiht the file input and the file output stream class :
+1> Working wth the file output stream 
+file output stream is used to output the data to the file , Specifically the binary file andf that too oen byte at a time is onyl allowed to transfer  . 
+ANy output given otu in the form off the bianry format one byte at a time is the fileoutput stream used .
+
+
+Syntax  :
+input stream connection :
+fileoutputstream s  = new fileOutputStream("input.txt") ;
+The paramter constrecutor must be a file name , if the null is passed then the filenotfoundError ill eb generated .  
+If the file is not in the directory then the file not found exepction is used  .This has to be handled  .
+synatx  :
+fileoutputStream ms = new fileoutputstream("text.txt") ; thrws the Filenotfound exception .
+
+the synavtx are of 3 type  for the fileoutputStream  :
+1> string name inside the constructor 
+2> file descriptor in the constrcutor
+3> discriptor in the constructor 
+4> string name , boolean append (either true or false)
+both 1,4 can throw the file not found exception . 
+File output stream (file name , booleana apppend) 
+this are bacailty the constructor that are avaible 
+
+in the 1 and the 2 data is lost during the re-run of the code . 
+for the data not  getting lost use the 4,5 type of the data constrctor . 
+
+InputFile stream 
+Use to read the data from the file , oppostie for the file output stream . 
+The file Input stream class has doesa not has the append version becasue ther is no point of appending the data inthe file . 
+
+The constrcutor deos not require any input of the boolean append 
+The programming becomes easy in this  the input and the output stream  .
+
+In both the non paramter constryctor are not avaible .  
+
+code for reading the data from the file :
+
+the connection of the fileInput and the output must be odf the same class and not for nay dfiffernt class ./
+example 
+Book ms = new Book("abc.txt") ;
+the name of the java file is the book.java in the above example . 
+
+read :
+Book ns  = new Book("abc.txt")  ;
+int data  = book.read() ;
+System.out.println(data) ;
