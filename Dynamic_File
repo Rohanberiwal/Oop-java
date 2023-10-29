@@ -1,0 +1,44 @@
+Syntax and important key points 
+1> FileInputstream sn = new FileInputStream(abc.txt)
+The read is use to read the bnytes in the file  . 
+In the file that has the character and if we are using the command for the int then we will surely get the ascii values of the file . 
+
+Using the int , then surely wee will get the character ASCII code and not the character itself . 
+
+
+Dynamic reading of data :
+to get the dynamic reading of the data we can use the for / while loop  , at the end of the file the read returns hte -1 as the numeric value . 
+synatx for the dyanmic reading of the data
+****
+i = fis.read(); 
+while(i!=-1)
+{system.out.println(data);}
+****
+
+The data stored inside the variable or the file is lost after the whole prorgam exectuion  . 
+
+wrriting to the file make a output stream connection . 
+
+how does the write method work in the byte connection , use we use this as if we write the write(5) the 5->101 the wrtiteen to the file . 
+
+fileoutputstream ms = new fileoutputstream("New.txt") ;
+ms.write() ;
+ms.close() ;
+the class or the method wehere this ab9ovbe statement are written then the IOstreamException is includeed and is intended ot throw  . 
+
+if the vacent file is not created then the file not found exception is generated . 
+
+Dynamic copying of one file into the other file :
+Data is avauible in one file f1 and we wish to copy the data into other file named file2  , this is called the dyncmaic copying of the data . 
+
+form data one -> java file -> textfile writing .
+Connection making 
+1>make the read connection using the java appplication by making a fileinput . 
+2> make the writer methodf with the constrcutopr as the string in the write mehtod to the text file where we wish to make the dynamic copying  . 
+
+
+Add the exception and the possible try and catch for the robustness  of the code  .
+
+Several expections are covered using the comma seperation  . 
+ 
+Dynamic file coppying 
