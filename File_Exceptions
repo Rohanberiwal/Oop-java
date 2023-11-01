@@ -1,0 +1,77 @@
+Dynamic file copying operation in Java 
+There is hardcoding data for the data transfer form the p.txt to q.txt file Usaully .
+The soucre file has to be read and the source file should not be hardcoded .  
+The file name input has to be tacken form the keyboad or from the i/o device . 
+Take the input for the file destionation and the file output stream using the scanner or any other method  . 
+There are intotal 7 wasy to take the user input .
+
+
+Ways to take input form the user  : 
+1> Console as the commandline 
+2> Nuffer reader approach 
+3> Console 
+4> Scanner class import
+5> GUI using the javaFX  or stuff similar to that 
+6> System approach 
+
+case -1 :
+
+java file copy arg[0] arg[1]
+ 
+
+fileInputStream ms = new FileInputStream(arg[0]);
+fileOuputStream msn  = new File Ouput Stream(args[1])  ;
+
+The file in the both of these should be present explicity ,and these should be defined .
+The file your are entriering has to be there in teh directory  .
+The code for the copying a gile into other file we can use the Filecopy part .
+
+filecopy fileCop.Java p.txt . 
+How does the above statement work >
+The filecopy is a use to copy the content of the fisrst file to the other file .
+The java file content arte copied to the text file .
+
+The two main things to keep in mind :
+1> Must pass the file from the cmd line 
+2> src file must be there physically .
+
+The destination file is created by the fos object automatically , so no need to create  . 
+FileNotFound exception  has to be handled ayt each step .  
+File not found is a checked exeception and it extends i/o excepton .
+adding the import statement of java is very important .
+
+The checked expcetion is a complie time error , to it is basciallty a error not a exceptioon but it comes wiht the name of the exception . 
+
+Inside the diretopry the files are there , this is a mandatory operation  , the file should be there .
+Inside the directory if the file is not there then the file not found exception  is there  . 
+Files permsission are also should be granted so that the user can  use them .
+
+
+FNFE is a expection is a complie time error and it is a  checked excpetion that has to be handled .
+
+When the file ascess is denied then the output stream is not able find the file and the gives the file permsssion not ghranted error . 
+
+
+when do u get the file not found ecception :
+1> when the file is not there 
+2>whent the file is a directory 
+3> file is not in the same direcotory .
+
+
+fileNotFound Exception with fis object :
+when does the file not found exception  occue with the object oyutput stream :
+1> when the file name is not avaible .
+2> file is availaible but it is not regular file  , rather than a direcotory  .
+3> file is availaible but reading , are not availaible. 
+
+fileNotFoundException in the fos object  :
+if unable to creatr the file 
+if the file is availiable as directory and npt as regular file rather then a directory .
+no writing permissions. 
+
+the file writing in the c drive , then the permission denied error will be given or file not found exception .
+fileOutputStream constructor gives a permission denied error when the file is unable to ascessed . 
+the expceiton of the file not found is availaible is when the the file is present but the ascess is denied . 
+
+
+file not found is a important checked exception .
