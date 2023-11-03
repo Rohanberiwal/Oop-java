@@ -1,0 +1,49 @@
+Anonymous Inner class 
+This is also called as the nameless inner class  . These are the inner classes without the name , these are called as the anonymous inenr classes .
+
+These are the classes used for the one time use these are called the anonymous classes and the not only this there is a anonymous array  . 
+
+
+Anonymous class types :
+1> extends a class 
+2> class that implements a inetrface 
+3>classes that is defined inside  the arguments  . 
+
+The above three are based on the bhevaiour and the state .
+
+Example using the threads :
+Threads A = new Threads() ;
+{
+} ;
+here in the above example the {} ; is bascially a subclass that extend the thread class and this has has the parent as the thread  .
+
+The anonymous class are rthe object of the child class always .
+
+Remainder : There is always a one time requirement , Always. 
+in the tempoery requirement the anonymous Inner classes are needed .
+
+If the reuqirement of the class is a lot then the concreate class is requirement else the anonymous class is requiired .
+
+Total dotfile  created  : One is for the outer file , one for the anonymous inner class file  . so in total, 2 files are generated . 
+
+The inner class is always the child class object it does not  matter is the class is a normal one or the anonymous one . 
+
+usually when a program method is defined inside the Anonymous class then there is method overriding of the outerclasas method  . 
+
+Type of the approaches : difference  :
+Job is needed multiple time :
+Anonymous inner class Approach  -> creaate a anonymous class that extends the thread . 
+Here the anonymous class makes a whole new thread  . 
+
+
+Job is not one time use :
+
+Normal class approach -> this depend on the actual thread and the function inside the thread of the for loop is called as the job of thread .
+In this therer is only one thread and that theread is the main one Usaully . 
+
+
+In the anonymous aspporach where the thread are dxtended then tje output of the function cannot be defined . Hence when ever there is multi threading then the output is impossible to be predicated .  
+
+In the multi threading the class always extends the runnable intertface and when the process is running then the job of the thread is ther process defined inside the class or the inner class .
+
+for the starting exectuionm of the multi threading then we have to use the t.start() funvtion where the t is a object of the thread object .
