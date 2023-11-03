@@ -1,0 +1,14 @@
+Normal java class vs anonymous Innner class
+
+Difference between the Normal java and the anonymous java class :
+1>Normal java class can implments multiple interfaces at a time .
+2> Anonymous java class can extend and implmenmt only and only one interface at a time . 
+Anonymous Inner class cannot extend and cannot implenment the class and the interface at the same time .
+
+Inside the anonymous class cannot make any number of constructor where as the normla java class can make any number of classes .  
+
+In the anonymous classes there is no conecpt of the constructor unlike the normal  java class .
+
+In the normal java class we make any number of constructor , upto infinite . 
+
+In the anonymous Inner classes there is no conecpt of the constructor becasue the name os class the the constor name has to be same also to be noted that the anonymious class has no name so the constrctor concept is very much senseless . 
