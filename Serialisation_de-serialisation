@@ -1,0 +1,103 @@
+Serialization and De-serialization 
+What is serialization ?
+The process of conversion of the data from the normal ot the transport supported form in the data stream, is called the serialisation . 
+In the professional way  :
+In java if there is a object which is in the java supported from  :
+If we have tp save the object in a file , then we have to convert the data from the java supported from to the file suipported ior the netwerok supported form .  This connversion of the data from the file to the network supported form is called as the serialisation  .
+java object - > newtok supported form / file / data structure supported form .
+
+
+De-serialisation  
+The process of the conversion of the network to the java supported form is called the de- serilisation  . 
+More formally , the process of deserialisation is the process of reading the state of the object fromt the network  supported format o the the java supported format . 
+
+How to implement the serialisation :
+Step 1> The data inside the file is eihter a binary data or the character data, so a data i/io streasm has tbe developed from the java file to the text or the output file . 
+
+FileOuputStream  fos  = new fileOutputStream(file name) ;
+ObjectOuputStream obs   = ne bjectOuputStream() ;
+
+What is the use fo the two : 
+1> The object output stream takes the binary data and then converts the object data to the binary data 
+2> The file ouptut stream writrs the data into the file  . 
+
+How to implment the process of de-serilaisation  
+1>FileInputStream 
+2> ObjectInputstream  -> read object method(specificALLY)
+
+By using the above two we can easily implement the de- serilaisation method . 
+
+example of serial/ de-serial using a java program  :
+public static void main(String args[])
+{
+
+// data serial
+dog d  = new dog() ;
+FileOUputStream ms  = new FileOuputStream(abc.txt) ;
+ObjectOutPutStream asm  = new ObjectOuputStream() ;
+asm.write(d) ; 
+
+// de-serial
+fileInputStream fis  = new FileInpuTStream() ;
+ObjectInput Stream ios  = new Object InputStream() ;
+ios.read(d) ;
+
+
+}
+
+end of the program :
+In the above program , the code throws the Exception since the object does not implements the serialisable object . 
+The error is  : Not Serialiasable Exception  . 
+
+The class which is making the object , that must implements the serialisable interface  . 
+
+Also the import java.io has to be there on the top of the file. 
+
+
+serialisable interface -> this is present inthe java.io package . 
+The above is a checked runtime exception  .
+
+The interface is a very very important one otherwsie the code wont compile . 
+
+
+Transient and final keyword in Serialisation 
+Keywords : Trasnsient  : This is onlyfor the variable and not for the classes or the methods . 
+
+The storage in the serialisation is the permanent one and the not the temporry storage . 
+
+Tranisent is made for the seurity reseaons , wehre the jvm check if the variable is transient then the keyword must be the seucre one . 
+
+The keyowrd transient is jsut like the encapusialtion where the keyword must be secured and cannot be ascess during the input and the output data stream  . 
+The transient is a indictor or the marker for not to serialize, this is used to show that please dont serilaise the variable . 
+
+
+static vs transient 
+Static variables means the class level data and not the object data . No need to make the object in this .  
+The static variabels does not has nay relation to the object .  
+
+
+which varible is created first the static one or the non static one ?
+Always the static variables are created firt then the non static one . 
+
+The non static instance are never created first .
+Only and only the non static varibles that are not transient takes part in  the serialisation , other variabeles like the static are the one which does not even belong to the class ovbject and the transient are the security secured data so not data in this .  
+
+Decleaing the static variables as the transient never makes any sense  . 
+
+Since both the static and the transient never takes part in the serialisaiton .
+
+final vs Transient 
+Final keyowrd is used to show that the data is final and is constant , no changes are to be made in the data value .
+
+At the compile time , the final variable are replaced by the final data values , however in the runtime , the state of the final variables is nothing but the contant value that was declared  , in short during the runtime , the final variabel , it is the contant value only  .
+
+None final can be chnages easily. 
+
+At the runtim of the program the terminology of the final variables is not there . 
+
+The final Variables in the serialisation takes place using the final value and at the runtime in the prorgam there is no satte of the final variiables , hence the making of the final varles as the transient makes no sense .  
+
+final Transient  / static Transient both does not make  sense  .
+
+The transient output is always and always 0 . 
+Transisent keyoword only mean dont save or it means not to serealiaze  , the state is not saved . 
