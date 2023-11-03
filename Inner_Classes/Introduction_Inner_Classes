@@ -1,0 +1,42 @@
+Inner classes 
+A class which is declared inside the other class  .
+The inner class are / are used for the concept of the event handling for the optimised performance and the GUI concept importvement.
+
+The inner class help in the fixing of the GUI bugs  . 
+
+When should the concpt of the inner classes be used ?
+Wihtout exisiting one type of the object if there is no chance of the existance of the other type of object , then the concept of the inner classes is used . 
+
+The two class object are in the perfect assiocation . 
+One of the class is directly in the assoication wiht the other class .
+
+Example :  Without the exisitance of the car object , there is not chance of the decreration of the engine object . hence the engine is a inner class of the car class . 
+Example 2 : Wihtout the University the Examination is not possible  . Hence the exam is a inner class of the University .
+
+A hashmap is also a biggest example of the inner class , where the key has a inne class as the value  . 
+
+Wihtout the existance of the outer class therer is not chance of he inner class object . ->(HAS -Arealtion) 
+
+The outer and the inner is the HAS - A reltation or the compostion relation  .
+The relation between the outer and the inner class is not a IS - A realtion and is a HAS-A relarion ship .
+
+There are 4 type of the inner classes based on the behnaviour :
+1> Normal or Regular 
+2>Method local class
+3> Anaymous inner classes
+4>Static nested classes
+
+Dot file generation for the outer and the inner classes  :
+1> for every inner class there is a dotfile generated named as the outer.class 
+2> for the inenr class there is a inner classs named as the Outer$Inner.class . 
+There is a extra dolalr sign . 
+
+The jar file is a group of dot.class file .
+
+if we tyr to run only the outer class then we get the error named as  : No such method inside the main  or the main not found exception  .
+
+For the exectutioon of the outer class there has to be the main in the outer class along wiht the inner class , otherweise the dot file of the outer class give give the error and no try . catch can be used fo the checking . 
+
+IF there is a main in the inner class then surely the output is genetrastrd . 
+if we comppile the outer$inner then-> compliation error surely . 
+The inner class code can not be directlty be touched only the outer one can bet ouched .
