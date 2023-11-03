@@ -1,0 +1,64 @@
+Normal Inner class / Regular Inner class
+Inside the inner class the static member cannot be declared but that doesnt mean that we cannot ascess the instance method insdie the inner class  .
+
+From inside the Inner class or nomal class we can ascess the both static and the non static members of the outer class direclty  . 
+
+The static variable are declared in the instacne method of the outer class do that doesnt make any difference  . 
+Insdie the inner and the outer class if there is a variable change then the nearesr person inside either the inner or the outer willget the chance . 
+
+to get the value of the x we use the this.x for the x value inside the inner class instance variable . 
+to get the outer class value : outer.this.x  is the method  .
+
+to get the value of the class outside the outer valeu we use the outerclass This.x 
+syantx is very important otherwise the valuse is different or thre can be a compiation error .  
+The only modifier for the outer and the inner classes are 
+outer -> public , defualt , final , asbtract , static  . 
+inner -> protected , priavte , static .
+NOTE: These above are not valid for the method local inner class theyu are only for the nextsed class outer and the inner  .
+
+
+for the creartion of the object  : class A , class B , class C objects to ascess the object of the object C . 
+
+Method local inner classes 
+Sometyime the inner class are declared insde the method this is called as the method inner classes . 
+
+The method local inner classs is the best choice to meet the nested method requirements . 
+The is the best requirement when to meet the nested local requirements . 
+
+The most comman inner classses are the anynomous one . 
+The method derined inner classes are the most used one . 
+
+Declreation of inner class insdie the static method 
+inner class can be declared isnde both the static and the instance method  .
+
+Where will be getting the complie time errro  ?
+class Outer
+{
+int x  = 10 ;
+int y  = 10 ;
+public static m()
+{
+class Inner
+{ print(x+y) ;
+}
+Inner i = new Inner() ;
+i.m() ;
+}
+public static void main(String args[])
+{
+ Outerclass o  = new Outerclass() ;
+ o.m() ;
+}
+}
+Ouput : Compliation failed , static vairbalees cannot be ascessed from the static context .
+
+if we remove the static and mke m a instance method then the compliation is sucessful very easily  . 
+
+
+We cannot ascess the local variables of the method where we declare the local variable . 
+
+if the local varible declared as final then the local variables of the method the inner is declared can be ascessed .
+
+local varibles are stroed inside the stack and the global in the heap . 
+
+Inside the ,method local inner classes  the variables can only be final , strictfp and the asbsrtact variables  .
