@@ -1,0 +1,17 @@
+Static nested classes 
+Sometimes we can declare inner class wiht the static modifier , hence this is called as static nested classes .
+Withthe existance of the outer class there is neraly no chance of the exisitance of the static varibale of the class declared  . 
+
+class Outer
+{
+ class Inner{}
+}
+
+Here since the inner class is non static then the inner class ahs the non static refracne  or the instance refraance  . 
+
+In the the static class object there may be a chance of the exisitance of the object that is deifned inside the class as the static refrance  , however the object that has the non static context or the instance of context , those are impossible to exisit without the outer class object .
+
+The Inner class object is strongly associated witht the outer class object  that is why this Innenr class with the outer clasas is called as the nested class object  . 
+
+Hence the static nestedc class object is not 
+strongly assocaited with the outer class object , that is why there is the use of the word nested  . 
