@@ -38,5 +38,42 @@ if we tyr to run only the outer class then we get the error named as  : No such 
 For the exectutioon of the outer class there has to be the main in the outer class along wiht the inner class , otherweise the dot file of the outer class give give the error and no try . catch can be used fo the checking . 
 
 IF there is a main in the inner class then surely the output is genetrastrd . 
-if we comppile the outer$inner then-> compliation error surely . 
+if we compile the outer$inner then-> compliation error surely . 
 The inner class code can not be directlty be touched only the outer one can bet ouched .
+There will eb a compile time error in the inner clasas main and if we try ot complie the inner class . 
+
+
+Inside the Inner class we cannot have any the static decleration including the main method otherwise there will be as complie time error  .
+
+
+The name of the error is compliation failed , the inner class cannot have any static method delerations .
+Inside the inner class the non static or the instance method can be declared easilty but not the static one  . 
+
+
+Without the outer class object the inner class object cannnot be created , hence the inner class se phale we have to create the outer class object .
+
+If there is a main inside the outer class abnd not insdie the inner class thens the code would complie very very easily . 
+
+synatx example :
+class Outer
+{
+class Inner{}
+
+public static void main(String args[])
+{ outer o   = new outer() ;
+outer$Inner oi  = new Outer$Inner() ; // how top declare the inner class object using the outer class object . 
+
+}}}
+
+Ascessing the inner class code form the instance area of the outer class:
+Make a function in the instance area of the outer code that is asceeing the method of the inner class . 
+
+Ascessing the code for the inner class from the instance variable of the code is  a easy apporach in the outer class rather than making a object in the main and then using the code .
+
+inside the two differernt file and the main is not inside the oouter and the inner then the outerclass object has to be made first then the obnject of the inner class ,has to be made  . 
+
+Ascessing the inner class code : Methods
+1> static area of the outer class 
+2> from the outside of the class 
+
+2>from the instance area of the outer class . 
