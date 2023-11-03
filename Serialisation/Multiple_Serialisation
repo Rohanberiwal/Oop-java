@@ -1,0 +1,76 @@
+Multiple Serialisation  :
+There is not limit to serialise the number of object ot the files  , but the object should implmenetn the serialisable interface  . 
+
+
+The order of the serialisation and the deserialisation should be same else the object and there would be error .
+
+Example of Multiple object Serialisation :
+public static void main(String args[])
+{
+Dog d   = new Dog() ;
+Cat c  = new Cat() ;
+Rat r  = new Rat() ;
+// Serialisation
+File OuputStream fos  = new FileOuputStream();
+ObjectOutputStream ms  = new ObjectoutputStream(fos) ;
+ms.writeObject(d)
+.
+.
+similairt the other objects
+// deserialsition  
+File InputStream sk  = new FilewInputStream() ;
+ObjectInputStream ss  = new ObjectInputStrema() ;
+Dog d2== ss.readObject(d) ;. 
+.
+.
+Same order me do the reading . 
+
+}
+
+Condtion when u dont know the order in which the pbject is serialised in the data stream  :
+
+then make the de-serialisation as polymorphised means , make the object of as of the object class , Now make the use of the InstanceOf operation / function where the object is check if the object is instance of the provided type .
+
+Exmaple :
+Object o = ss.readObject() ; 
+if(o.instanceOf(Dog))
+{}
+else if ... 
+{}
+// hence the code ends .
+
+The instance is usd to check the instance and make the use of typecasting , where the object can be typecaseted easily . 
+
+****** ->
+Object Graphs in Serialisation 
+
+Example :
+class Dog
+{
+Cat c  = new Cat() ;
+}
+class Cat
+{
+Rat r  = new Rat() ;
+}
+clasS Rat 
+{
+intj = 20 ;
+}
+public static void Main(String args[])
+{
+Dog d  = new Dog() ;
+fos fs  = new fos() ;
+oos os   = new oos()  ;
+}
+
+// here whenever we are serailiasing ,, then many objects are able to get serilaised . 
+The object that are connected to the object and whose constructor can be called , then this is called as the object graph . 
+
+The above only one of the class has to be put in the graph  . 
+The most important , thing is that the class and all teh classes where the constructor of the other object are calleed there the object has to be implement the serializable  .
+
+
+every class object and the class ahs to implement the seribalisable .
+
+The output is the input not serialisable exception recieved if the object is not serialisable .
