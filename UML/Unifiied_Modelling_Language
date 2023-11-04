@@ -1,0 +1,35 @@
+Unified modelling language
+The is a daigram based model use to make project layout . 
+These are divided into 2 type: 
+1> Bhevaourial 
+2> Structural
+
+Behvourial diagrams :
+
+class diagram : These has different class and the object and used to show the various static realation between the class and the objects .
+
+Components diagrma :
+This is used to show how different smaller componnent are put togther to from bigger components and hence , used in the whole system deployments  , These has the source code components , executable componnets etc . 
+
+Deployment diagram :
+This is used to show th system architectue as the deployment . example the client and the server networks .
+These has the artifects , which show muiltiple object in the real world .
+These diagram is used in the overall development  .
+
+Object diagram :
+This is the instance of the class diagram, used to show the detailed snapshot of the system state at a particualr point of the time  .
+
+The main difference in the class and the object is thta the objt is a specific diafgram and the class diagram is a abstract one 
+ .
+
+
+Package diagram : Use to show packagesd and the dependenciras between the them , used to displayu the different biew of  the systems . 
+
+
+composite diagram
+similar to class diagram 
+sort of a component diagram  .
+this is used int eh mirco level systems 
+This is also called as the static structure diagram used to show the partts only.
+specifivally the internal strucuttres .
+uses the connectors between teh components  .
