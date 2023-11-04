@@ -1,0 +1,69 @@
+JUnit 
+
+This is used for the testing part . 
+Why do we testing ?
+>Designing 
+>Write code
+>Test 
+>Run the Test 
+The point of the junit testing means that the code works for the future also and not only for the starting this, period .
+	
+Why is there a need for the testing framework ?
+To minimize the differencer in the expected and the got value , one of the value is reciveved and other value is the  value that ,we test on . 
+
+How to run the test ?
+Step :
+1> Perpreations 
+2>Povide the inputs
+2> Run the test 
+3>Expceted outputs 
+4>Verify result .
+5> Do somehting for the test recovery .  
+@Test annotation is used top test the code . 
+the method name is the Test() always and never any other method .
+
+
+Obseravtion :
+1> Mark test annotations 
+2>This is used to give  a mark to the engine about how the test is going to happen . 
+
+Junut provide api for the repeated checking and testing . 
+There are  3 different API for the unit checking . 
+
+Lifecycle -> Junit 
+Phases of the lifeCycle :
+1>Before All 
+2> Before Each
+3> Test
+$>After each 
+5> After all
+befroe is used for the initilaisation hase and the part checking . 
+The afterll part is used for the cleanup and the tasks for the tests 
+
+These abopve are bascically  the annotation that is used to run the program while the phases are just the form in thet annontatations.
+
+Caonditional exectuion based exectuion of the jUnit tests
+
+There are two parts in teh conditional operation execution 
+1>EnabledOnOS
+2> DisabledOnOS
+Theya re again the annotation ans are the marker to the compiler .
+
+Assmptions 
+These are the asummption marker taken for the sucess full exectuioon of og the prorgram . 
+
+Repeated test annotations 
+This is used when there is functionality with the randomness 
+Used for the repated execution of the program again and again  . 
+Substuites for the Test annotations.
+
+Parameterized test in the JUnit :
+THese are similar to the repeated test but the differnce is that they have different parameter or the different inputs everytime .
+To use the parameterizesd source annotation used is : @	Value SOURCE nnotation . 
+In this aboe annotation the value is passed as the paramterts inside the constructors . 
+
+The second annotation is the parameterzied source -> source Annotation .
+
+The third and the last one is the nested test  :
+@nested is the annotation used in this . 
+In this bforceALL and the after all is not used anywhere only the after each and the before each is  used . 
