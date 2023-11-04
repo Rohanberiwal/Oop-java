@@ -1,0 +1,76 @@
+Nested class and Interface
+Anyhting inside anything is possible , a class inside a class or the class inside the interface etc . 
+The above is valid only for the class and the interfaces .
+Inside the interface maximum thing are the abstarasct classes . 
+
+Various combination of the nested classes and the interfaces  :
+1>Class inside a class ->Possible 
+Example  : Univiersty with the deparemernt as the subclass . Subclass department inside the other class .  
+
+Different departmnet class inside the university class is a example of the class inside the class . 
+
+Inside the class if we require multiple impolementation of the interface and all these are realted to a particular class , then we can define interface inside the  class .
+
+exampkle  :
+class vechicles 
+{
+interface x
+{}
+class bus implements x 
+{}
+}
+// the above is a raw example of the file . 
+
+Inside the map object just like wihtout the key the valuie entry has no meaning . there has to be assocaitin or the composition inside the inner classes . 
+
+The interface entry is defined  the map interface becasue of for the entry of the key  and the value pair . 
+
+Example 
+Interface  Outer
+{ public void m1()
+{interface inner 
+{
+public void m2()}
+}
+}
+We wish to ascess the method M1 , how can we do that ?
+
+do this in the way defined below :
+1> class Test Implements Outer
+{
+public void m1()
+{
+Sys.out.println() ;
+}
+}
+automatically if the class is extending the first object then the inner one is automatically implemenmted .
+
+Inside the above example , both the outer and the inner method can be implemented indepedndently , wihtout any problem .
+
+To do the inner method implememntation we can do this Outer.Inner , to implement this  . 
+Even tough we have implemenmted the outer interface we dont have to explicity define the inner interface .
+Both the outer and the inenr interface are very very different from one other , and we dont have to define the two togther . 
+
+
+Defining a class inside the interface .
+In this above state ment is valiud when the functionarotry of  the class is associated with the interface very closely and bounded way . 
+
+for example : 
+inteface EmailService
+{
+class emailDetails
+{}
+}
+The above are closely asociated and bounded together . 
+Since it is assumed that the inner class named the email details are no wehre used  apart from the inerface email service hence , it is implemented inside . 
+
+The implemented apporach is the advanced implementation of the class or the interface that has been implemented .
+
+
+The class defined insde the interface is always public static weather or not it is defined or not .
+
+Important point :
+1> class inside the class - > valid 
+2> class inside the interface -> valid 
+3> interface inside the class  ->surely valid 
+4> interface inside the interface -> valid 
