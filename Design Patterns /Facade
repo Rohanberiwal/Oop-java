@@ -1,0 +1,22 @@
+The Facade design pattern is a structural pattern that provides a unified
+interface to a set of interfaces in a subsystem. It defines a higher-level 
+interface that makes the subsystem easier to use. The Facade pattern simplifies a
+client's interaction with a complex system by providing a single entry point through a well-defined interface.
+
+Intent of the Facade Pattern:
+The primary intent of the Facade pattern is to provide a simplified, higher-level interface to a set of interfaces in a subsystem, making it easier to use and reducing dependencies.
+
+Key Participants:
+Facade (Facade): This is the main class that provides a simplified interface to the client. It
+knows which subsystem classes are responsible for a request and delegates client requests to the appropriate objects within the subsystem.
+
+Subsystem Classes (SubSystem): These are the classes that implement subsystem functionality. They handle the work assigned by the Facade object.
+
+Client (Client): This is the class that interacts with the Facade to access the subsystem's functionality. The client is shielded from the complexities of the subsystem.
+Applications :
+
+Simplified Interface: The Facade pattern provides a simple, unified interface to a complex system, reducing the learning curve for the client.
+
+Reduced Dependency: Clients depend on the facade, not on the individual subsystem classes. This reduces the coupling between the client and the subsystem.
+
+Easier Maintenance: Changes to the subsystem can be isolated within the facade, minimizing the impact on clients.
