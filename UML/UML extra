@@ -1,0 +1,70 @@
+Unified Modelling Language 
+
+The uml stands for the unified modelling langauge used in the modelling of the software .
+This is used to anaylze , design and implement the software .
+This sepciafically includes the realtion between the classes.
+
+class Diagram  :
+1.use to represent the static structure . 
+2. Use case : use to represent the actor and the platfrom relation  .
+
+UML class Notation :
+1.Class Name 
+2. Class attributes 
+3. Class Operations 
+
+
+Important things to keep in the mind 
+1.Modifiers
+• Private: -
+• Public: +
+• Protected: #
+• Static: Underlined
+
+the abstract class are named in the italics  .
+There are classes that are represented in this . 
+
+Uml for the class relationship include :
+1.association 
+2.dependency 
+3.inheritance 
+4.compostion 
+
+
+The use case diagram in the uml multiplicities  :
+The interface aare shown with the name of the interface .
+The + - are used in the class diagram to show the modifiers . 
+The actor in the system is not a part of the system overall , this is associated with the system . 
+The user is a system , not a part of the exisiting systme but it is a systme itself only and hence the there exist two system .  One is the usre stick adn the other is the normal system .
+in thr user case there can be multiple figures possible hence there are possible several stick actors .
+ 
+Use case relationships
+● Association
+● Generalization
+● Extend
+● Include
+
+Assocation
+The assocation cannot be between the any other thing and has to be between the use and the stick actor . 
+This is represenated by a solid line .  
+
+
+Generalization 
+This can exist between the use and the use cases . This is the nerxt name for the inheritance and is used to show the parent and the child relation .  
+This is represented by a solid dotted line with a hollow arrow . 
+representted by the parent to the child .
+and this is called as the parent of the child 
+parent <--- child . 
+
+Extends realtiionship
+
+This is always between the use case only . This represent the optional behaviour or the frequently invoked cases those that are very very rarely used .
+This is not very similar to inheiratnce or the generalization  .
+This is represented by 
+<<extends>> .keyword . 
+
+<<Include >>
+This is used in the not very seldom case and stuff like that . they are used in thge readily used topic and stuff . 
+
+
+
