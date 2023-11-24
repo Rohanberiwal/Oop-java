@@ -1,0 +1,81 @@
+Multithreading (Java Classes)
+Multitasking : Ability to perfrom multi- task at the single time  .
+Multiple - Application opened in a computer at a time and many process are running , then this is called as the Multi Tasking .
+The above task is is excected using the context swich .
+
+Use of the Multi tasking : 
+1. Use to increase the cpu perfromance . 
+2. Acheived using two ways  : Multi processing and Multi - Threading . 
+
+
+Multi Processing :
+When Multi process is connected to many cpu , to complete the running time , then it is called as the Multi -Processing .
+
+These are connected to many cpu , hence the process can swich betweent eh cpu to complete the overall running time .
+Multi - processing is suited at the 	Os level  . 
+
+Multi threading 
+Many threads  , lightweight process , subprocess of the process .  
+In a process  , the sub processes are executed by the thread so that the cost is very les and the computing speed is very high  .
+
+Many thread are executed at the single time  . 
+Multi threading is very important .
+
+
+Multi threading in Java  :
+Use the thread to exectue the programs  :
+1. Thread class 
+2. Runnable interface .
+
+The abovE API can be used for the overall exectuion 
+The main method is made using the thread only , where the main method is just a thread running . 
+
+Process and Thread  :
+1. Proces : running program that is currently ececution . 
+ Thread  : This is the subpart of the process . These are called as the sub - Task .  
+
+2.	Context Switching : The Cpu has to execfute the process in the nano sceond , hence . 
+Thread has no context swithcing 
+ 
+3. Inter process communication  > Inter process communication take more time , inter thread has less time .
+
+
+4. Address space  : each process has different space. 
+Inside the threads the address space is shared .  
+
+5. Dependency  : Process are independent of each other  .
+Thread are dependent on each other  .
+
+6. Syncronozation  : each process has a thread synconization  is important  , howerver in the thread it is not very imoportant . 
+
+Resouce comsumption in the thread is less and more in the process . 
+Time creation take more in the process then iun the threads. 
+Time for the process termiantion is very much more than the time for the thread termination .
+
+
+
+Thread creation methods  :
+1 . Using the thread class 
+2. Runnable interface .  
+
+Thread is created in the java.lang package  .
+
+Thread has the run method overirde .
+Some important method :
+1.start()  : is use to create thread .  
+2. Run() : defines the task that the thread has to done . 
+
+What is the life cycle of the thread  ?
+five major steps :
+1.create() the thread using the cvonstructor .  
+2.Runnable part is the second stage of the thread  .
+3.  Running stage the stage that is running . 
+4. JVM wil allocate the processor using the thread schedular . 
+The scehdular is a aprt of the jvm 
+5. Dead state .  
+
+Jvm dos the processor allocation in the schedualar . 
+
+More on the runnable interface :
+1. The first and the foremost method is the run  method in this interface .
+2. The thread class interfnally implememts the runnable hence the class has the run is overrride .
