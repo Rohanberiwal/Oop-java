@@ -1,0 +1,136 @@
+	Collection Framework and Assertions :
+Assertions : Statement that are true or false . This makes the java programming called as the defensive programming .
+
+
+Assertion syntax  :
+assert assumption 
+assert assumption  : with a detailed nessage .  
+the assert is a boolen message either true or false and the message is the detiled message that either is a primitve data type or the object type. 
+
+if the assertion is false then the assertion error is called up , and the program exits .
+
+Example 
+public class AssertionDemo {
+public static void main(String[] args) {
+int i; int sum = 0;
+for (i = 0; i < 10; i++) {
+sum += i;
+}
+assert i == 10;
+assert sum > 10 && sum < 5 * 10 : "sum is " +
+sum;
+}
+}
+
+
+two assertion can b emade at the same time using a && between them .
+
+the mesage is shown after the":" keyoword .
+
+
+command to execute the asserions : 
+java -ea Filename.java 
+OR
+java -enableassertions filename.java 
+
+
+what is the dfifference in the assertion and the exception handling ? 
+The exception handling is used to check if there is a possiblilty of the error and then correct if there is a chnace . 
+The assertion is used to check the correctness basedn on some assumption thqat are made using the assert .
+
+The exceptoion handles the robustness while the assertion checks the correctness . 
+Assertion can be on and offed based on the user while the exceprion are always on  . 
+ 
+Collection framework :
+1. There is a unified architecture needed for the collections  .
+The collection is a object that group the other object together such that these can be used . 
+The collection has the implementation , algorithms and the interface .  
+The collection is used in the transmit of the data from one end to the other end . 
+
+The framwwork provided by the java is called as the java collection framework  .
+
+what all can the interface do :
+The interface can extend one to other interface.
+The interface can implement other interface .  
+
+
+Iterable<E>  interface 
+1. This has only one method , that is teh iterator(_) also this method .
+2. The method  allows the use of the for each loop to all the object the person is using .
+the iterator allows the use of removal of the object form the data structure .  
+
+
+Iterator Interface  >
+This method has the basic three methods 
+1. Object next()
+2 . Boolean Has Next()
+3. Void remove()
+
+these three  provide the ascess to all the method in the collection and to all ther object ion the collection .
+
+
+Iterator know about the position of the object in the collection .
+the next() used to check if the object has a next or not then remove it or do the necessary opperatiosn on that  .
+
+
+Collection interface : that extends the iterator interface  ;
+This in the combination provide all the method that can be used iterator over any of the interface  .
+
+example 
+public class SimpleCollection {
+public static void main(String[] args) {
+Collection c = new ArrayList();
+for (int i=0; i < 10; i++) {
+c.add(i);
+}
+Iterator iter = c.iterator();
+while (iter.hasNext())
+System.out.println(iter.next());
+
+}
+}
+The above code work as there is a arraylist that can store default anything . the4 person adds the index to the arraylist then the person uses the iterator and using the boolean operator of the hasNext() we can simply do the iteration in the collecitons. 
+
+
+List Interface : this is defined using the arraylist interface and this is purely implemented using the genercis .  
+
+Array has a fixed length , the List on the other hand are the resizable arrays .
+
+How many interface are there in the list Interface ?
+The Iterator<E> and the List InTerator<E> are the main two inerator in the list that is used to get the object in the array .
+
+The listIterator interface extends the iterator<E> Interface hence the  the list iterator has in totlal 6 operation 
+
+iterartor ke :
+1.Boolean hasNext(_)
+2.void remove()
+3.Object next()
+4.boolena hasPrevious()
+5.void add()
+6. object Previous .  
+
+The list iterator allows the traversal in the for the forward part and the ListIterator allows for the backward one 
+The default size of the Arraylist() is thev initial size of 10 .
+
+Arraylist(initial collection c)
+ArrayList(int initial Capacilty) 
+
+There are different set and the get methods for the List Iterator  :
+1.Object get(int index)
+2.Object set(int index , object element)
+3.May throw IndexOutOFBoundError .
+
+
+The array list automaticlly re sizes itself when the space reduces .
+
+LinkedList Overview  :
+The linkedlist stores the element in  the node . 
+
+In this the removal and the inseration is very inexpensive .
+Linear T is inexpensive .
+Rnadom is expensive . 
+
+constructor :
+LinkedList()
+build an empty list  .
+LinkedList(Collection c) : Linkedlist stores the object of the collerction c now the iterator use for this is iterator<Collection> .
